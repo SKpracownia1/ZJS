@@ -1,6 +1,8 @@
-#14. Użyj lambda wyrażenia do znalezienia największej liczby spośród listy liczb. Proszę nie używać pętli.
+#15. Przy pomocy lambda wyrażeń i funkcji filter stwórz listę kolejnych liczb podzielnych przez 13 spośród liczb z przedziału [100,200]
 
-from functools import reduce
+print(list(filter(lambda x: not x % 13, range(100,200))))
 
-f = lambda a,b: a if (a > b) else b
-print(reduce(f, [12,11,52,102,13]))
+
+
+
+
